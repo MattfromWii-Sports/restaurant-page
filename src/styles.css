@@ -2,11 +2,42 @@
     padding: 0;
     margin: 0;
     border: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
+html {
+    font-size: 12px;
+}
 body {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+}
+
+header {
+    height: 30svh;
+    width: 100vw;
+    background-image: url('./../images/banner.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+nav > button {
+    width:10rem;
+    height: 4rem;
+    font-size: 1.5rem;
+}
+
+#content {
+    background-color: wheat;
+    width: 100vw;
+    min-height: 70svh;
 }
