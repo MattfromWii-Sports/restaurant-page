@@ -12,17 +12,27 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    background-color: wheat;
+    min-height: 100svh;
 }
 
 header {
-    height: 30svh;
-    width: 100vw;
+    height: 25rem;
+    width: 100%;
     background-image: url('./../images/banner.webp');
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 3rem;
+    border-bottom: 4px solid black;
+}
+header > h1 {
+    font-size: 8rem;
+    color: yellow;
+    text-shadow: -4px -4px 0 #000, 4px -4px 0 #000, -4px 4px 0 #000, 4px 4px 0 #000;
 }
 nav {
     display: flex;
@@ -33,11 +43,12 @@ nav {
 nav > button {
     width:10rem;
     height: 4rem;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+    border: 3px solid black;
 }
 
 #content {
-    background-color: wheat;
-    width: 100vw;
-    min-height: 70svh;
+    width: 70%;
+    min-height: 40rem;
+    background-color: yellow;
 }
