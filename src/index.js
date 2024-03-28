@@ -33,5 +33,5 @@ function clearContent() {
 }
 
 loadInitialPage();
-home.classList.add('selected');
-loadHome();
+// home.classList.add('selected');
+// loadHome();

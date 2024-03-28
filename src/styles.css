@@ -55,8 +55,8 @@ nav > button:hover {
 }
 
 #content {
-    width: 65%;
-    min-height: 40rem;
+    width: 70%;
+    min-height: calc(100svh - 25rem);
     background-color: yellow;
 }
 
@@ -119,4 +119,86 @@ nav > button:hover {
 .items p:hover {
     text-decoration: underline;
     color: blue;
+}
+
+.contact-container {
+    padding: 8rem 6rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    flex-wrap: wrap;
+}
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    flex: 3;
+    padding-left: 2rem;
+}
+.question {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 5px;
+}
+form h1 {
+    font-size: 2.5rem;
+}
+form label {
+    font-size: 1.6rem;
+}
+form input,
+form textarea {
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    padding: 1rem;
+    outline: none;
+    width: 100%;
+    box-sizing: border-box;
+}
+form input:focus:invalid,
+form textarea:valid {
+    border: 2px solid red;
+    border-radius: 5px;
+    outline: none;
+}
+form input:focus:valid,
+form textarea:valid {
+    border: 2px solid green;
+    border-radius: 5px;
+    outline: none;
+}
+#submit {
+    padding: 1rem 0;
+    max-width: 14rem;
+    min-width: 10rem;
+    border: 2px solid black;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.socials {
+    display: grid;
+    grid-template-columns: 14rem 14rem;
+    grid-template-rows: 14rem 14rem;
+    gap: 1.5rem;
+    flex: 2;
+}
+.social-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+.social-item img {
+    width: 10rem;
+    height: 10rem;
+    border: 2px solid white;
+}
+.social-item p {
+    font-size: 1.2rem;
 }
