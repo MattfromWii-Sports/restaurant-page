@@ -4,9 +4,10 @@ export default function loadMenu() {
     content.appendChild(container);
     createItem('', 'Water');
     createItem('', 'Pea on Plate');
-    createItem('', 'MEAT Eat');
+    createItem('', 'MEAT MEAT');
     createItem('', 'Vegan air');
     createItem('', 'Leafy Meat');
+    createItem('', '200-story Burger Deluxe');
     function createItem(src, foodName) {
         const item = document.createElement('div');
         item.classList.add('items');
