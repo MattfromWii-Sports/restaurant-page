@@ -1,6 +1,7 @@
 import './styles.css';
 import loadInitialPage from './initial-page.js';
 import loadHome from './home.js';
+import loadMenu from './menu.js';
 
 const content = document.querySelector('#content');
 
@@ -16,7 +17,7 @@ home.addEventListener('click', () => {
 order.addEventListener('click', () => {
     clearContent();
     order.classList.add('selected');
-    //
+    loadMenu();
 })
 contact.addEventListener('click', () => {
     clearContent();
