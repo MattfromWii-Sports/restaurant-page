@@ -2,6 +2,7 @@ import './styles.css';
 import loadInitialPage from './initial-page.js';
 import loadHome from './home.js';
 import loadMenu from './menu.js';
+import loadContact from './contact.js';
 
 const content = document.querySelector('#content');
 
@@ -33,5 +34,6 @@ function clearContent() {
 }
 
 loadInitialPage();
+loadContact();
 // home.classList.add('selected');
 // loadHome();
