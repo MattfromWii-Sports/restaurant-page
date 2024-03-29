@@ -122,20 +122,18 @@ nav > button:hover {
 }
 
 .contact-container {
-    padding: 8rem 6rem;
+    padding: 8rem 6rem 4rem;
     box-sizing: border-box;
     display: flex;
-    justify-content: center;
     align-items: center;
-    gap: 5rem;
+    gap: 4rem;
     flex-wrap: wrap;
 }
 #contact-form {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    flex: 3;
-    padding-left: 2rem;
+    flex: 1;
 }
 .question {
     display: flex;
@@ -181,12 +179,17 @@ form textarea:valid {
     font-size: 1.4rem;
 }
 
+.socials-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .socials {
     display: grid;
-    grid-template-columns: 14rem 14rem;
-    grid-template-rows: 14rem 14rem;
-    gap: 1.5rem;
-    flex: 2;
+    grid-template-columns: 10rem 10rem;
+    grid-template-rows: 10rem 10rem;
+    gap: 2rem;
 }
 .social-item {
     display: flex;
@@ -195,8 +198,8 @@ form textarea:valid {
     gap: 8px;
 }
 .social-item img {
-    width: 10rem;
-    height: 10rem;
+    width: 8rem;
+    height: 8rem;
     border: 2px solid white;
 }
 .social-item p {
