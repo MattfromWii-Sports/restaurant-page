@@ -23,7 +23,7 @@ order.addEventListener('click', () => {
 contact.addEventListener('click', () => {
     clearContent();
     contact.classList.add('selected');
-    //
+    loadContact();
 })
 
 function clearContent() {
@@ -34,6 +34,5 @@ function clearContent() {
 }
 
 loadInitialPage();
-loadContact();
-// home.classList.add('selected');
-// loadHome();
+home.classList.add('selected');
+loadHome();

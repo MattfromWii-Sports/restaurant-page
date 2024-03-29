@@ -94,7 +94,8 @@ nav > button:hover {
     padding: 8rem 6rem;
     box-sizing: border-box;
     display: grid;
-    gap: 20px;
+    justify-content: center;
+    gap: 3.5rem;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     grid-template-rows: auto;
 }
@@ -104,7 +105,7 @@ nav > button:hover {
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    padding: 4rem;
+    padding: 2rem;
     aspect-ratio: 1 / 1;
 }
 .items img {
@@ -117,16 +118,17 @@ nav > button:hover {
     font-size: medium;
 }
 .items p:hover,
-.social-item p:hover {
+.socials-item p:hover {
     text-decoration: underline;
     color: blue;
 }
 
 .contact-container {
-    padding: 8rem 6rem 5rem;
+    padding: 8rem 8rem 5rem;
     box-sizing: border-box;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 4rem;
     flex-wrap: wrap;
 }
@@ -203,10 +205,14 @@ form textarea:valid {
     align-items: center;
     gap: 8px;
 }
-.social-item img {
+.socials-item img {
     width: 9rem;
     height: 9rem;
 }
-.social-item p {
+.socials-item img:hover {
+    width: 9.5rem;
+    height: 9.5rem;
+}
+.socials-item p {
     font-size: 1.2rem;
 }

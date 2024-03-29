@@ -27,8 +27,11 @@ export default function loadContact() {
     })
 
     //inside socials container
+    const socials = document.createElement('div');
+    socials.classList.add('socials');
+    socialsContainer.appendChild(socials);
     createSocials('Instagram', './../images/instagram.png');
-    createSocials('Facebook', './../imagesfacebook.png');
+    createSocials('Facebook', './../images/facebook.png');
     createSocials('Twitter', './../images/twitter.png');
     createSocials('Linked-in', './../images/linkedin.png');
 
@@ -52,18 +55,19 @@ export default function loadContact() {
         input.setAttribute('name', attribute); 
         input.id = attribute;
         questionField.append(label, input);
+        input.autocomplete = 'off';
         input.required = true;
     }
     function createSocials(name, path) {
         const socialsItem = document.createElement('div');
         socialsItem.classList.add('socials-item');
-        socialsContainer.appendChild(socialsItem);
-        //inside social's container
-        const img = document.createElement('div');
+        socials.appendChild(socialsItem);
+        //inside socials
+        const img = document.createElement('img');
         img.src = path;
         img.alt = `Logo of ${name}`;
-        const name = document.createElement('p');
-        name.textContent = name;
-        socialsItem.append(img, name);
+        const title = document.createElement('p');
+        title.textContent = name;
+        socialsItem.append(img, title);
     }
 }
