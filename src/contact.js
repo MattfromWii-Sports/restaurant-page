@@ -13,9 +13,9 @@ export default function loadContact() {
     const header = document.createElement('h1');
     header.textContent = 'INFORMATION';
     form.appendChild(header);
-    createQuestion('text', 'name', 'NAME');
-    createQuestion('email', 'email', 'EMAIL');
-    createQuestion('textarea', 'message', 'MESSAGE');
+    const formName = createQuestion('text', 'name', 'NAME');
+    const formEmail = createQuestion('email', 'email', 'EMAIL');
+    const formMessage = createQuestion('textarea', 'message', 'MESSAGE');
     const button = document.createElement('button');
     button.textContent = 'SUBMIT';
     button.id = 'submit';
@@ -23,8 +23,11 @@ export default function loadContact() {
 
     button.addEventListener('click', (e) => {
         e.preventDefault();
+        formName.value = '';
+        formEmail.value = '';
+        formMessage.value = '';
         console.log('submit');
-    })
+    });
 
     //inside socials container
     const socials = document.createElement('div');
@@ -57,6 +60,7 @@ export default function loadContact() {
         questionField.append(label, input);
         input.autocomplete = 'off';
         input.required = true;
+        return input;
     }
     function createSocials(name, path) {
         const socialsItem = document.createElement('div');
