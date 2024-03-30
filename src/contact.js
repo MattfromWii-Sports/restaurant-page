@@ -33,10 +33,10 @@ export default function loadContact() {
     const socials = document.createElement('div');
     socials.classList.add('socials');
     socialsContainer.appendChild(socials);
-    createSocials('Instagram', './../images/instagram.png');
-    createSocials('Facebook', './../images/facebook.png');
-    createSocials('Twitter', './../images/twitter.png');
-    createSocials('Linked-in', './../images/linkedin.png');
+    createSocials('Instagram', '../images/instagram.png');
+    createSocials('Facebook', '../images/facebook.png');
+    createSocials('Twitter', '../images/twitter.png');
+    createSocials('Linked-in', '../images/linkedin.png');
 
     function createQuestion(type, attribute, title) {
         const questionField = document.createElement('div');

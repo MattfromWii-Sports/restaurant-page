@@ -6,7 +6,7 @@ export default function loadHome() {
     const imgContainer = document.createElement('div');
     imgContainer.classList.add('home-img-container');
     const img = document.createElement('img');
-    img.src = './../images/home-burger.jpg';
+    img.src = '../images/home-burger.jpg';
     img.alt = 'Photo of a burger with a height equivalent to two full sized burgers';
     imgContainer.appendChild(img);
     const slogan = document.createElement('h1');
