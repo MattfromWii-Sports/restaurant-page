@@ -1,3 +1,8 @@
+import instagram from './images/instagram.png';
+import facebook from './images/facebook.png';
+import twitter from './images/twitter.png';
+import linkedin from './images/linkedin.png';
+
 export default function loadContact() {
     const container = document.createElement('div');
     container.classList.add('contact-container');
@@ -33,10 +38,10 @@ export default function loadContact() {
     const socials = document.createElement('div');
     socials.classList.add('socials');
     socialsContainer.appendChild(socials);
-    createSocials('Instagram', '../images/instagram.png');
-    createSocials('Facebook', '../images/facebook.png');
-    createSocials('Twitter', '../images/twitter.png');
-    createSocials('Linked-in', '../images/linkedin.png');
+    createSocials('Instagram', instagram);
+    createSocials('Facebook', facebook);
+    createSocials('Twitter', twitter);
+    createSocials('Linked-in', linkedin);
 
     function createQuestion(type, attribute, title) {
         const questionField = document.createElement('div');
